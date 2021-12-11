@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./css/animation.css">
+
 
     <meta name="theme-color" content="#2091F9">
 
@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    
+
     <!-- Aparatdo bot messenger -->
     <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
@@ -45,33 +45,34 @@
     </div>
 
     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "101500002395472");
-      chatbox.setAttribute("attribution", "biz_inbox");
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "101500002395472");
+        chatbox.setAttribute("attribution", "biz_inbox");
     </script>
 
     <!-- Your SDK code -->
     <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v12.0'
+            });
+        };
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
-    
+
     <!-- -->
 
     <!-- Apartado Header -->
-    <header class="hero">
+    <header class="hero" id="home">
         <nav class="nav container">
             <div class="nav__logo">
                 <!-- Esto hara ilucion de un logo-->
@@ -81,16 +82,16 @@
             <!-- Apartado navegacion-->
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Inicio</a>
+                    <a href="#home" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Servicios</a>
+                    <a href="#Servicios" class="nav__links">Servicios</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Obtener plan</a>
+                    <a href="#plan" class="nav__links">Obtener plan</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
+                    <a href="#Contacto" class="nav__links">Contacto</a>
                 </li>
 
                 <img src="./images/close.svg" class="nav__close">
@@ -107,14 +108,14 @@
             <p class="hero__paragraph">
                 Si lo que buscas es una buena administración, gestión y control de tus oficinas u otros establecimientos, pues <strong>¡¡ Punto de negocio es para ti. !!</strong>
             </p>
-            <a href="#" class="cta">Comienza ahora</a>
+            <a href="#plan" class="cta">Comienza ahora</a>
         </section>
     </header>
 
     <!--Fin Apartado Header-->
 
     <main>
-        <section class="container about">
+        <section class="container about" id="Servicios">
             <h2 class="subtitle">¿Cuales son nuestros Servicios?</h2>
             <p class="about__paragraph">¿Quieres comprar, rentar una propiedad nueva o vender una existente y al mismo tiempo tener un control, administración y gestion de ello? ¡Punto de Negocio te ofrece una solución fácil!.<br> <br><img height="50px" width="60px" src="./images/logopuntoNEg.png"
                     alt="">
@@ -154,12 +155,12 @@
                 </div>
 
                 <figure class="knowledge__picture">
-                    <img src="./images/macbook.png" class="knowledge__img">
+                    <img src="./images/Macbook.png" class="knowledge__img">
                 </figure>
             </div>
         </section>
 
-        <section class="price container">
+        <section class="price container" id="plan">
             <h2 class="subtitle">Obten el plan perfecto para ti</h2>
 
             <div class="price__table">
@@ -309,7 +310,7 @@
             </section>
 
             <section class="questions__offer">
-                <h2 class="subtitle">¿Estas listo para aprender ver lo que te ofrese punto de negocio?</h2>
+                <h2 class="subtitle">¿Estas listo para ver lo que te ofrese punto de negocio?</h2>
                 <p class="questions__copy">Aquí podra ver todos las oficinas, locales u otros establecimientos que estes buscando para la compra o renta de los mismos, ¿Qué esperas?.</p>
                 <a href="#" class="cta">ver ahora</a>
             </section>
@@ -324,10 +325,10 @@
 
                 <ul class="nav__link nav__link--footer">
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Inicio</a>
+                        <a href="#home" class="nav__links">Inicio</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Servicios</a>
+                        <a href="#Servicios" class="nav__links">Servicios</a>
                     </li>
                     <li class="nav__items">
                         <a href="#" class="nav__links">Login</a>
@@ -345,7 +346,7 @@
             </form>
         </section>
 
-        <section class="footer__copy container">
+        <section class="footer__copy container" id="Contacto">
             <div class="footer__social">
                 <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
                 <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
